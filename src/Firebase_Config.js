@@ -1,14 +1,17 @@
-import firebase from 'firebase';
+import firebase from "firebase";
 
 var firebaseConfig = {
-	apiKey: 'AIzaSyCjyyVxmqG-MSmAb7ElnyroxMK87IyTnKo',
-	authDomain: 'to-do-app-362f1.firebaseapp.com',
-	projectId: 'to-do-app-362f1',
-	storageBucket: 'to-do-app-362f1.appspot.com',
-	messagingSenderId: '1046645053586',
-	appId: '1:1046645053586:web:06aba8aa0cf36b661d2e4b'
+  apiKey: "AIzaSyAKi7Uj7JuTl8UbS9DhpsxPTj2inPN74Ws",
+  authDomain: "to-do-app-1667d.firebaseapp.com",
+  projectId: "to-do-app-1667d",
+  storageBucket: "to-do-app-1667d.appspot.com",
+  messagingSenderId: "312058030046",
+  appId: "1:312058030046:web:559083956b3cbd41d7df4f",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
 const { db } = firebase.firestore();
-export default db;
+
+export { db };
+
